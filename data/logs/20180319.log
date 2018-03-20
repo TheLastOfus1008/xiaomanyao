@@ -1,0 +1,96 @@
+2018-03-19 09:55:55 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1521424555</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-03-19 09:55:55 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1521424555',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1521424555',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2018-03-19 09:55:55 response :
+------------
+
+2018-03-19 09:59:40 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1521424780</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-03-19 14:43:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1521441834</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-03-19 14:43:54 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1521441834',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1521441834',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2018-03-19 14:43:54 response :
+------------
+
+2018-03-19 17:48:19 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1521452899</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+

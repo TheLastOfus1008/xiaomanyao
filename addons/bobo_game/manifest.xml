@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="">
+	<application setting="false">
+		<name><![CDATA[博博游戏]]></name>
+		<identifie><![CDATA[bobo_game]]></identifie>
+		<version><![CDATA[1.7]]></version>
+		<type><![CDATA[business]]></type>
+		<ability><![CDATA[博博游戏房卡管理]]></ability>
+		<description><![CDATA[博博游戏房卡管理]]></description>
+		<author><![CDATA[xdongwo]]></author>
+		<url><![CDATA[http://we7.dy82.cn]]></url>
+	</application>
+	<platform>
+		<subscribes>
+		</subscribes>
+		<handles>
+		</handles>
+		<rule embed="false" />
+		<card embed="false" />
+		<supports>
+			<item type="app" />
+		</supports>
+	</platform>
+	<bindings>
+		<menu>
+			<entry title="代理管理" do="daili" state="" direct="false" />
+			<entry title="房卡管理" do="fangka" state="" direct="false" />
+			<entry title="提现记录" do="tixian" state="" direct="false" />
+		</menu>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

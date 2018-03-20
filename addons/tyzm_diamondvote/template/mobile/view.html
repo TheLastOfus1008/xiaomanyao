@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<title>首页</title>
+		<link rel="stylesheet" href="shiping/dist/css/style.min.css?t=123" />
+		<link rel="stylesheet" href="shiping/dist/css/all.min.css" />
+		<link rel="stylesheet" href="shiping/plugin/layer/mobile/need/layer.css" />
+		<style>
+			
+		</style>
+	</head>
+
+	<body>
+		<!--主内容播放区域-->
+		<div class="main">
+			<!--推荐与搜索组-->
+			<div class="tjAndSearch">
+				<div class="tuijianImg ">
+					<img src="shiping/image/push.png" />
+				</div>
+				<div class="searchGroup">
+					<input id="search" class="searchText" type="search" placeholder="请输入昵称或视频编号" />
+					<img id="searchBtn" class="searchBtn" src="shiping/image/search.png" onclick="searchWords()" />
+				</div>
+			</div>
+			<div class="rightBox">
+
+				<div class="userHpBox">
+					<img src="shiping/image/gilr1.png" />
+				</div>
+
+				<div class="actRuel">
+					<img src="shiping/image/ruleicon.png" />
+					<span>活动规则</span>
+				</div>
+
+				<div class="piaoCnt">
+					<img src="shiping/image/collect.png" />
+					<p>票数:<span id="piaoshu">205</span></p>
+				</div>
+
+				<div class="toupiaoCnt" onclick="toupiao()">
+					<img src="shiping/image/vote.png" />
+					<span>投票</span>
+				</div>
+			</div>
+			<div class="videoInfoBox">
+
+				<div class="rankCnt">
+					<img src="shiping/image/num.png" />
+					<p>排名:<span id="paiming">5</span></p>
+				</div>
+				<p class="videoAuthor">昵称:<span id="nickname">小兰</span></p>
+				<p class="videoId">编号:<span id="bianhao">5</span></p>
+				<p class="videoDetail">我就是我，是颜色不一样的烟火，要做最坚强的泡沫</p>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!--<div class="swiper-slide">
+						<div class="row">
+							<div class="videoBox">
+								<video id="video1" controls="controls" style="object-fit: cover; width: 100%; height: 100%;" preload="meta" loop="loop" playsinline="true" webkit-playsinline="true" playsinline x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" src="http://video-voting.test.upcdn.net/testvideo/test.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+					</div>-->
+				</div>
+			</div>
+
+		</div>
+		<!--页脚刷新与上传按钮-->
+		<div class="footerBtnGroup">
+			<img src="shiping/image/refresh.png" onclick="location.reload()" />
+			<a href="http://www.masxr.cn/app/index.php?i=2&c=entry&rid={$_GPC['rid']}&do=join&m=tyzm_diamondvote">我要参加</a>
+		</div>
+
+		<div class="AllSlideBox hidden">
+
+		</div>
+		<script type="text/javascript" src="shiping/dist/js/all.js"></script>
+		<script type="text/javascript" src="shiping/plugin/layer/layer.js"></script>
+
+		<script>
+			var _list = new Array(); //数据
+			var mySwiper, pageNum = 0,_swiperCnt;
+
+			$(document).ready(function() {
+				$("body").css("height",document.innerHeight+'px');
+				//1.获取推荐列表
+				getRmdList(function(rmdList) {
+					//2.获取普通列表第一页
+					getListByPage(function(dfList) {
+						//3.数组合并
+						console.log(_list);
+						//4.加载swiper
+						mySwiper = new Swiper('.swiper-container', {
+							direction: 'vertical',
+							onInit: function(swiper) {
+								//获取已加载的slide总数
+								
+								//修改为第一个信息
+								editInfo(_list[0]);
+								//初始化加载3个slide
+								initAddSlide(swiper);
+								
+
+							},
+							onTouchStart: function(swiper) {
+								var _index = swiper.activeIndex;
+								var _idx = $(swiper.slides[_index]).attr("data-num");
+								console.log(_idx);
+								document.getElementById("video" + (_idx)).pause();
+								$("#vdop" + _idx).removeClass("hidden");
+
+							},
+							onTouchEnd: function(swiper) {
+								if(swiper.isEnd) {
+									layer.msg('已经到底了');
+								}
+							},
+							onTap: function(swiper) {
+								var _index = swiper.activeIndex;
+								var _idx = $(swiper.slides[_index]).attr("data-num");
+								if($("#video" + _idx).attr("data-isPlay") == '0') {
+									document.getElementById("video" + _idx).play();
+									$("#video" + _idx).attr("data-isPlay", '1')
+									$("#vdop" + _idx).addClass("hidden");
+								} else {
+									document.getElementById("video" + _idx).pause();
+									$("#video" + _idx).attr("data-isPlay", '0');
+									$("#vdop" + _idx).removeClass("hidden");
+								}
+
+							},
+							onSlideChangeEnd: function(swiper) {
+								var _idx = $(swiper.slides[swiper.activeIndex]).attr("data-num");
+								changeSwiperSlide(_idx);
+								var _ninde=parseInt($(".swiper-container .swiper-slide-active").attr("data-sindex"));
+								editInfo(_list[_ninde]);
+	
+							}
+						})
+					})
+				});
+
+			});
+
+			//初始化添加Slide
+			function initAddSlide(_swiper) {
+				_swiper.appendSlide($(".AllSlideBox .swiper-slide").eq(0).clone());
+				_swiper.appendSlide($(".AllSlideBox .swiper-slide").eq(1).clone());
+				_swiper.appendSlide($(".AllSlideBox .swiper-slide").eq(2).clone());
+				
+			}
+
+
+			//生成DOM节点
+			function addSwiperDom(_list) {
+				var _html = '';
+				$.each(_list, function(key, _listItem) {
+					_html += addSingleSlideDom(_listItem,key);
+				});
+				$(".AllSlideBox").append(_html);
+			}
+
+			//获取单个slide的html
+			function addSingleSlideDom(_item,_key) {
+				var _html = '';
+				_html += '<div class="swiper-slide" id="slied' + _item.num + '" data-num="' + _item.num + '" data-type="' + _item.commend + '" data-sindex="'+(_list.length+_key)+'">' +
+					'<div class="row">' +
+					'<div class="videoBox">' +
+					'<img id="vdop' + _item.num + '" src="shiping/image/play.png" />' +
+					'<video  id="video' + _item.num + '" data-isPlay="0"  style="object-fit: cover; width: 100%; height: 100%;" preload="meta" loop="loop" playsinline="true" webkit-playsinline="true" playsinline x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" src="' + _item.video_url + '" type="video/mp4">' +
+					'</video>' +
+					'</div>' +
+					'</div>' +
+					'</div>';
+				return _html
+			}
+			//滑动后改变
+			function changeSwiperSlide(_index) {
+				_index = parseInt(_index);
+				mySwiper.removeAllSlides();
+				var _af, _now, _bf;
+				_now = $(".AllSlideBox .swiper-slide[data-num='" + (_index) + "']").clone();
+				mySwiper.appendSlide(_now);
+				
+				var _nIndex=parseInt($(".AllSlideBox .swiper-slide[data-num='" + (_index) + "']").attr("data-sindex")); 
+				
+				if(_nIndex<(_list.length-1)){
+					_af=$(".AllSlideBox .swiper-slide[data-sindex='" + (_nIndex+1) + "']").clone();
+					mySwiper.appendSlide(_af);
+				}else{
+					getListByPage(function(ret){
+						_af=$(".AllSlideBox .swiper-slide[data-sindex='" + (_nIndex+1) + "']").clone();
+						mySwiper.appendSlide(_af);
+					});
+					
+					
+				}
+				
+				if(_nIndex>0){
+					_bf=_af=$(".AllSlideBox .swiper-slide[data-sindex='" + (_nIndex-1) + "']").clone();;
+					mySwiper.prependSlide(_bf);
+		
+				}
+				
+
+				mySwiper.update();
+				
+				
+			
+
+			}
+
+			//修改视频信息
+			function editInfo(_val) {
+				$(".userHpBox img").attr("src", _val.avatar);
+				$("#piaoshu").html(_val.vote_num);
+				$("#nickname").html(_val.nickname);
+				$("#paiming").html(_val.num);
+				$(".videoDetail").html(_val.introduction);
+				$("#bianhao").html(_val.num);
+				if(_val.commend.toString() == "1") {
+					$(".tuijianImg").removeClass("hidden")
+				} else {
+					$(".tuijianImg").addClass("hidden")
+				}
+
+			}
+			//获取推荐列表
+			function getRmdList(callback) {
+				var _url = "http://www.masxr.cn/app/index.php?i=2&c=entry&commend=1&do=data&rid={$_GPC['rid']}&m=tyzm_diamondvote&wxref=mp.weixin.qq.com"
+				$.get(_url, function(ret) {
+					console.log(ret);
+					if(ret && ret.code == 1) {
+						console.log("推荐列表：");
+						console.log(ret.data);
+						addSwiperDom(ret.data)
+						_list=ret.data;
+						pageNum=pageNum+1;
+						callback(ret.data);
+						
+					} else {
+						layer.msg('获取推荐列表失败');
+					}
+				}, 'json')
+			}
+			//请求接口数据
+			function getListByPage(callback) {
+				var ajaxUrl = 'http://www.masxr.cn/app/index.php?i=2&c=entry&do=data&m=tyzm_diamondvote&wxref=mp.weixin.qq.com&wxref=mp.weixin.qq.com&page=' + pageNum + '&limit=5&rid={$_GPC["rid"]}'
+				$.get(ajaxUrl, function(ret) {
+					if(ret && ret.code == 1&&ret.data.length>0) {
+						console.log("第" + pageNum + "次请求");
+						console.log(ret.data);
+						addSwiperDom(ret.data);
+						_list=_list.concat(ret.data);
+						pageNum++;
+						callback(ret.data);
+					}else{
+//						layer.msg('已经到底了');
+					}
+				}, 'json')
+			}
+
+			
+			
+			//投票事件
+			function toupiao(){
+				var _num= $(".swiper-container .swiper-slide-active").attr("data-num");
+				var _url='http://www.masxr.cn/app/index.php?i=2&c=entry&rid={$_GPC["rid"]}&do=vote&id='+_num+'&m=tyzm_diamondvote'
+				$.get(_url, function(ret) {
+					if(ret && ret.status.toString() == '1') {
+						$("#piaoshu").html(parseInt( $("#piaoshu").html())+1);
+						layer.msg('投票成功');
+					}else{
+						layer.msg(ret.msg);
+					}
+				}, 'json')
+				
+			}
+			
+			//活动规则页
+			$(".actRuel").on("click",function(){
+				location.href='http://www.masxr.cn/app/index.php?i=2&c=entry&rid={$_GPC["rid"]}&do=introduction&m=tyzm_diamondvote'
+			});
+			
+			
+			$("#search").on('keypress', function(e) {
+				if(e.keycode == 13) {
+					searchWords();
+				}
+			});
+			$("#searchBtn").on("click", function() {
+				searchWords();
+			})
+			
+			//搜索事件
+			function searchWords() {
+				var _kw = $(".searchText").val();
+				if(!_kw) {
+					layer.msg('请输入用户名或视频后搜索');
+				} else {
+					getSearchList(_kw,function(ret){
+						initAddSlide(mySwiper);
+					});
+				}
+			}
+
+			//获取搜索接口数据
+			function getSearchList(_keyWords, callback) {
+				var _url = "http://www.masxr.cn/app/index.php?i=2&c=entry&do=data&rid={$_GPC['rid']}&keywords=" + _keyWords + "&m=tyzm_diamondvote&wxref=mp.weixin.qq.com"
+				$.get(_url, function(ret) {
+					if(ret && ret.code.toString() == '1'&&ret.data.length>0) {
+						pageNum=0;
+						mySwiper.removeAllSlides();
+						$(".AllSlideBox").html("");
+						_list=[];
+						addSwiperDom(ret.data);
+						_list=ret.data;
+						callback(ret.data);
+					}
+				}, 'json')
+			}
+		</script>
+	</body>
+
+</html>

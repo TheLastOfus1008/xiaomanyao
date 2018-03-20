@@ -1,0 +1,86 @@
+<?php defined('IN_IA') or exit('Access Denied');?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:#ffebed;
+        }
+        .detail-1 img{
+            width:100%;
+            height:200px;
+        } 
+        .detail-2 img{
+            width:100%;
+           
+            margin-top:-4px;
+        } 
+        .content{
+            width:95%;
+            background-color:#ffebed;
+            margin-left:10px;
+            margin-right: 10px;
+            font-size:16px;
+            
+        }
+        .detail-4 img{
+            width:45%;
+            height:50px;
+            position: absolute;
+            bottom:20px;
+            left:10px;
+
+        }
+        .detail-5 img{
+            width:45%;
+            height:50px;
+            position: absolute;
+            bottom:20px;
+            right:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="detail-1">
+       <img src="<?php echo MODULE_URL;?>/template/mobile/image/detail_01.jpg" alt=""> 
+    </div>
+    <div class="detail-2">
+       <img src="<?php echo MODULE_URL;?>/template/mobile/image/detail_02.jpg" alt=""> 
+    </div>
+    <div class="content">
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;童年是最美好的时光，让孩子们拥有一个美好而又难忘的童年十分重要。关注宝宝的健康成长，
+          记录宝宝的成长历程，激励宝宝走向光明的未来，是每个家庭乃至社会的主题
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;记录孩子天真的表情，傲娇的pose，甜美的笑容，呈现孩子顽皮、可爱的一面！为小朋友留下
+          一份美好的记忆！
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了给宝宝一个展示自我的平台！幼安宝特主办“首届明星宝宝风采大赛”！如果你的宝宝够阳光、够可爱、
+          够帅气，请加入本活动，为宝宝的成长留下难忘的珍贵的回忆。
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本次活动宣传力度大、覆盖范围广，机会难得！所有参与活动者均有机会获得一份精美礼品！
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你还在等什么，赶快报名吧！
+        </p>
+    </div>
+           
+    <div class="detail-4">
+            <img src="<?php echo MODULE_URL;?>/template/mobile/image/detail_04.jpg" alt=""> 
+    </div>
+    <div class="detail-5">
+            <img src="<?php echo MODULE_URL;?>/template/mobile/image/detail_05.jpg" alt=""> 
+    </div>
+<script>;</script><script type="text/javascript" src="http://www.masxr.cn/app/index.php?i=2&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script></body>
+</html>

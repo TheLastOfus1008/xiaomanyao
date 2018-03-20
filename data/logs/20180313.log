@@ -1,0 +1,435 @@
+2018-03-13 07:55:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc07vogtVXRglYJ6A7nNfWGNs]]></FromUserName>
+<CreateTime>1520898904</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-03-13 09:18:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520903924</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好]]></Content>
+<MsgId>6532232614405511263</MsgId>
+</xml>
+
+2018-03-13 09:18:44 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520903924',
+    'msgtype' => 'text',
+    'content' => '你好',
+    'msgid' => '6532232614405511263',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520903924',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'tyzm_diamondvote',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '22',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'tyzm_diamondvote',
+    'content' => '你好',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+    ),
+  ),
+  'reply_type' => 
+  array (
+  ),
+)
+
+2018-03-13 09:18:44 response :
+------------
+Array:
+FromUserName : gh_f3f4d9e4ab3a ;
+ToUserName : oEpzc02fR5RsYtKYmhnqFnnnjbyE ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2018-03-13 09:44:35 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520905475</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好]]></Content>
+<MsgId>6532239275899788271</MsgId>
+</xml>
+
+2018-03-13 09:44:35 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520905475',
+    'msgtype' => 'text',
+    'content' => '你好',
+    'msgid' => '6532239275899788271',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520905475',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'tyzm_diamondvote',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '22',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'tyzm_diamondvote',
+    'content' => '你好',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+    ),
+  ),
+  'reply_type' => 
+  array (
+  ),
+)
+
+2018-03-13 09:44:35 response :
+------------
+Array:
+FromUserName : gh_f3f4d9e4ab3a ;
+ToUserName : oEpzc02fR5RsYtKYmhnqFnnnjbyE ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2018-03-13 09:44:41 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520905481</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[今天天气怎么样]]></Content>
+<MsgId>6532239301669592048</MsgId>
+</xml>
+
+2018-03-13 09:44:41 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520905481',
+    'msgtype' => 'text',
+    'content' => '今天天气怎么样',
+    'msgid' => '6532239301669592048',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520905481',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2018-03-13 09:44:41 response :
+------------
+
+2018-03-13 09:44:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520905487</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[天气]]></Content>
+<MsgId>6532239327439395843</MsgId>
+</xml>
+
+2018-03-13 09:44:47 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520905487',
+    'msgtype' => 'text',
+    'content' => '天气',
+    'msgid' => '6532239327439395843',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520905487',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2018-03-13 09:44:47 response :
+------------
+
+2018-03-13 09:45:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520905504</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[天气]]></Content>
+<MsgId>6532239400453839888</MsgId>
+</xml>
+
+2018-03-13 09:45:04 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520905504',
+    'msgtype' => 'text',
+    'content' => '天气',
+    'msgid' => '6532239400453839888',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520905504',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2018-03-13 09:45:04 response :
+------------
+
+2018-03-13 09:45:08 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520905508</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好]]></Content>
+<MsgId>6532239417633709073</MsgId>
+</xml>
+
+2018-03-13 09:45:08 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520905508',
+    'msgtype' => 'text',
+    'content' => '你好',
+    'msgid' => '6532239417633709073',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520905508',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'tyzm_diamondvote',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '22',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'tyzm_diamondvote',
+    'content' => '你好',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+    ),
+  ),
+  'reply_type' => 
+  array (
+  ),
+)
+
+2018-03-13 09:45:08 response :
+------------
+Array:
+FromUserName : gh_f3f4d9e4ab3a ;
+ToUserName : oEpzc02fR5RsYtKYmhnqFnnnjbyE ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2018-03-13 09:45:56 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520905556</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好]]></Content>
+<MsgId>6532239623792139312</MsgId>
+</xml>
+
+2018-03-13 09:45:56 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520905556',
+    'msgtype' => 'text',
+    'content' => '你好',
+    'msgid' => '6532239623792139312',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520905556',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'tyzm_diamondvote',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '23',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'tyzm_diamondvote',
+    'content' => '你好',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+    ),
+  ),
+  'reply_type' => 
+  array (
+  ),
+)
+
+2018-03-13 09:45:56 response :
+------------
+Array:
+FromUserName : gh_f3f4d9e4ab3a ;
+ToUserName : oEpzc02fR5RsYtKYmhnqFnnnjbyE ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2018-03-13 09:46:02 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520905561</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[今天天气不错]]></Content>
+<MsgId>6532239645266975801</MsgId>
+</xml>
+
+2018-03-13 09:46:02 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520905561',
+    'msgtype' => 'text',
+    'content' => '今天天气不错',
+    'msgid' => '6532239645266975801',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520905561',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'tyzm_diamondvote',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '24',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'tyzm_diamondvote',
+    'content' => '天气',
+    'type' => '2',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+    ),
+  ),
+  'reply_type' => 
+  array (
+  ),
+)
+
+2018-03-13 09:46:02 response :
+------------
+Array:
+FromUserName : gh_f3f4d9e4ab3a ;
+ToUserName : oEpzc02fR5RsYtKYmhnqFnnnjbyE ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

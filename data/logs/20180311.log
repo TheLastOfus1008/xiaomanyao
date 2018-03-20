@@ -1,0 +1,85 @@
+2018-03-11 16:44:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc05fUtsp51vQ0sIAHWzI3w7c]]></FromUserName>
+<CreateTime>1520757845</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-03-11 16:44:06 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc05fUtsp51vQ0sIAHWzI3w7c',
+    'createtime' => '1520757845',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oEpzc05fUtsp51vQ0sIAHWzI3w7c',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520757845',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2018-03-11 16:44:06 response :
+------------
+
+2018-03-11 19:00:42 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02mn7CgXBdrygVi_-YNGGvw]]></FromUserName>
+<CreateTime>1520766042</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-03-11 19:00:42 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02mn7CgXBdrygVi_-YNGGvw',
+    'createtime' => '1520766042',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oEpzc02mn7CgXBdrygVi_-YNGGvw',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520766042',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2018-03-11 19:00:42 response :
+------------
+
+2018-03-11 19:00:50 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02mn7CgXBdrygVi_-YNGGvw]]></FromUserName>
+<CreateTime>1520766050</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+

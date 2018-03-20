@@ -1,0 +1,260 @@
+2018-03-08 14:01:19 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520488878</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-03-08 14:01:19 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520488878',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520488878',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2018-03-08 14:01:19 response :
+------------
+
+2018-03-08 14:01:24 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520488884</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[投票]]></Content>
+<MsgId>6530450031178634429</MsgId>
+</xml>
+
+2018-03-08 14:01:24 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520488884',
+    'msgtype' => 'text',
+    'content' => '投票',
+    'msgid' => '6530450031178634429',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520488884',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'tyzm_diamondvote',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'tyzm_diamondvote',
+    'content' => '投票',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+    ),
+  ),
+  'reply_type' => 
+  array (
+  ),
+)
+
+2018-03-08 14:01:24 response :
+------------
+Array:
+FromUserName : gh_f3f4d9e4ab3a ;
+ToUserName : oEpzc02fR5RsYtKYmhnqFnnnjbyE ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2018-03-08 14:31:49 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520490709</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好]]></Content>
+<MsgId>6530457869493951178</MsgId>
+</xml>
+
+2018-03-08 14:31:49 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520490709',
+    'msgtype' => 'text',
+    'content' => '你好',
+    'msgid' => '6530457869493951178',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520490709',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'tyzm_diamondvote',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '17',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'tyzm_diamondvote',
+    'content' => '你好',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+    ),
+  ),
+  'reply_type' => 
+  array (
+  ),
+)
+
+2018-03-08 14:31:49 response :
+------------
+Array:
+FromUserName : gh_f3f4d9e4ab3a ;
+ToUserName : oEpzc02fR5RsYtKYmhnqFnnnjbyE ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2018-03-08 15:10:33 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc02fR5RsYtKYmhnqFnnnjbyE]]></FromUserName>
+<CreateTime>1520493032</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好]]></Content>
+<MsgId>6530467846702981842</MsgId>
+</xml>
+
+2018-03-08 15:10:33 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'createtime' => '1520493032',
+    'msgtype' => 'text',
+    'content' => '你好',
+    'msgid' => '6530467846702981842',
+    'from' => 'oEpzc02fR5RsYtKYmhnqFnnnjbyE',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520493032',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'tyzm_diamondvote',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '18',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'tyzm_diamondvote',
+    'content' => '你好',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+    ),
+  ),
+  'reply_type' => 
+  array (
+  ),
+)
+
+2018-03-08 15:10:33 response :
+------------
+Array:
+FromUserName : gh_f3f4d9e4ab3a ;
+ToUserName : oEpzc02fR5RsYtKYmhnqFnnnjbyE ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2018-03-08 22:33:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f3f4d9e4ab3a]]></ToUserName>
+<FromUserName><![CDATA[oEpzc05zMdVM1_6MeV8oBszSRrN0]]></FromUserName>
+<CreateTime>1520519584</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-03-08 22:33:05 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f3f4d9e4ab3a',
+    'fromusername' => 'oEpzc05zMdVM1_6MeV8oBszSRrN0',
+    'createtime' => '1520519584',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oEpzc05zMdVM1_6MeV8oBszSRrN0',
+    'to' => 'gh_f3f4d9e4ab3a',
+    'time' => '1520519584',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2018-03-08 22:33:05 response :
+------------
+
